@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 12</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+
+    .card-content p {
+      margin: 10px 0;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px 10px;
+      font-size: 0.9em;
+    }
+
+    .live {
+      background-color: #e91e63;
+      color: white;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 0.8em;
+    }
+
+    @media (max-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      body {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      body {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <a href="b12t7.html">Bài 12</a><a href="b13t7.html">Bài 13</a><a href="b14t7.html">Bài 14</a>
+  <div class="grid">
+    <div class="card">
+      <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/487451842_1323778498916066_2197374206325812681_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEGVR3vtHIEm1XzXYkzQpnN5qQienWxodTmpCJ6dbGh1FTFOHySZDtD-x-jgO88xhdKcrQ5ujVEE27jt6ZVq9bv&_nc_ohc=V1Rkl5kdN7sQ7kNvwEDqXhY&_nc_oc=AdkRlLx92CqvV6TnZ_wFuylmDmVQkqrEi6wduAoL5YfbjsVwSKTbUIUGLC9cgc2CeIjIHsxN0He2QkDHDyRt_yop&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD2AHRMbG5ri1lET1xYiyGBK_StG0helx1cwrCpPTmWjycZw&oe=681963B9" alt="Hoa">
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis!</p>
+      </div>
+      <div class="card-footer">
+        <span class="live">Live</span>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/487451842_1323778498916066_2197374206325812681_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEGVR3vtHIEm1XzXYkzQpnN5qQienWxodTmpCJ6dbGh1FTFOHySZDtD-x-jgO88xhdKcrQ5ujVEE27jt6ZVq9bv&_nc_ohc=V1Rkl5kdN7sQ7kNvwEDqXhY&_nc_oc=AdkRlLx92CqvV6TnZ_wFuylmDmVQkqrEi6wduAoL5YfbjsVwSKTbUIUGLC9cgc2CeIjIHsxN0He2QkDHDyRt_yop&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD2AHRMbG5ri1lET1xYiyGBK_StG0helx1cwrCpPTmWjycZw&oe=681963B9" alt="Hoa">
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis!</p>
+      </div>
+      <div class="card-footer">
+        <span class="live">Live</span>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/487451842_1323778498916066_2197374206325812681_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEGVR3vtHIEm1XzXYkzQpnN5qQienWxodTmpCJ6dbGh1FTFOHySZDtD-x-jgO88xhdKcrQ5ujVEE27jt6ZVq9bv&_nc_ohc=V1Rkl5kdN7sQ7kNvwEDqXhY&_nc_oc=AdkRlLx92CqvV6TnZ_wFuylmDmVQkqrEi6wduAoL5YfbjsVwSKTbUIUGLC9cgc2CeIjIHsxN0He2QkDHDyRt_yop&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD2AHRMbG5ri1lET1xYiyGBK_StG0helx1cwrCpPTmWjycZw&oe=681963B9" alt="Hoa">
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis!</p>
+      </div>
+      <div class="card-footer">
+        <span class="live">Live</span>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/487451842_1323778498916066_2197374206325812681_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEGVR3vtHIEm1XzXYkzQpnN5qQienWxodTmpCJ6dbGh1FTFOHySZDtD-x-jgO88xhdKcrQ5ujVEE27jt6ZVq9bv&_nc_ohc=V1Rkl5kdN7sQ7kNvwEDqXhY&_nc_oc=AdkRlLx92CqvV6TnZ_wFuylmDmVQkqrEi6wduAoL5YfbjsVwSKTbUIUGLC9cgc2CeIjIHsxN0He2QkDHDyRt_yop&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&oh=03_Q7cD2AHRMbG5ri1lET1xYiyGBK_StG0helx1cwrCpPTmWjycZw&oe=681963B9" alt="Hoa">
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis!</p>
+      </div>
+      <div class="card-footer">
+        <span class="live">Live</span>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
